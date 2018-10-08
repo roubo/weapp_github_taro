@@ -1,0 +1,32 @@
+.DetailContainer {
+
+}
+.DetailHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.DetailIcon {
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  margin-top: 80px;
+}
+.DetailTitle {
+  margin-top: 35px;
+  font-weight: 900;
+  font-size: 35px;
+}
+.DetailDescription {
+  font-weight: 200;
+  font-size: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+
+.DetailReadMe {
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+}

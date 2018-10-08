@@ -1,8 +1,10 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text, Image } from '@tarojs/components'
+import base64 from 'base64-decoding'
 import './index.css'
 import devapis from '../../apis/devapis'
 import ShowMarkDown from '../../components/ShowMarkDown/ShowMarkDown'
+import Tools from '../../utils/Tools'
 
 export default class Detail extends Component {
   constructor(props) {
@@ -27,14 +29,13 @@ export default class Detail extends Component {
     })
     devapis.getRepoDetail(repo.url+'/contents/README.md', {
       success: (res) => {
-
-        if(decodeURIComponent(escape(atob(res.content))).length > 100000){
+        if(Tools.base64_decode(res.content).length> 100000){
           this.setState({
-            readme: decodeURIComponent(escape(atob(res.content))).substr(0, 9999) + ' ...'
+            readme: decodeURIComponent(Tools.base64_decode(res.content))
           })
         }else {
           this.setState({
-            readme: decodeURIComponent(escape(atob(res.content)))
+            readme: decodeURIComponent(Tools.base64_decode(res.content))
           })
         }
 

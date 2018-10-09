@@ -14,7 +14,7 @@ export default class Search extends Component {
     }
   }
   config = {
-    navigationBarTitleText: 'search'
+    navigationBarTitleText: '搜索'
   }
 
   componentWillMount () { }

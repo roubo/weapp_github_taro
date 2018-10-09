@@ -15,7 +15,7 @@ export default class Detail extends Component {
     }
   }
   config = {
-    navigationBarTitleText: 'detail'
+    navigationBarTitleText: '详情'
   }
 
   componentWillMount () {

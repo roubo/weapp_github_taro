@@ -5,7 +5,7 @@ import './index.css'
 export default class About extends Component {
 
   config = {
-    navigationBarTitleText: 'about'
+    navigationBarTitleText: '说明'
   }
 
   componentWillMount () { }
@@ -21,7 +21,7 @@ export default class About extends Component {
   render () {
     return (
       <View className='index'>
-        <Text>关于</Text>
+        <Text>参考和使用GitHub开源社区小程序的相关数据，本小程序代码Github地址：https://github.com/roubo/weapp_github_taro.git</Text>
       </View>
     )
   }

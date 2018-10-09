@@ -6,7 +6,7 @@ import './index.css'
 export default class Index extends Component {
 
   config = {
-    navigationBarTitleText: 'CodeTop'
+    navigationBarTitleText: 'CodeTop今日排名'
   }
 
   componentWillMount () { }
